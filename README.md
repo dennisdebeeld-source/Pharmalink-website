@@ -1,48 +1,48 @@
 # PHARMALINK EUROPE Website
 
-Een moderne, professionele React website voor PHARMALINK EUROPE - een CDMO SEO Linkbuilding Services bedrijf.
+A modern, professional React website for PHARMALINK EUROPE - a CDMO SEO Linkbuilding Services company.
 
 ## 🚀 Features
 
-- **Moderne React 18 + Vite setup**
-- **TailwindCSS voor styling**
-- **Volledig responsive design**
-- **Smooth scrolling navigatie**
-- **Interactieve componenten**
-- **Mobielvriendelijke interface**
+- **Modern React 18 + Vite setup**
+- **TailwindCSS for styling**
+- **Fully responsive design**
+- **Smooth scrolling navigation**
+- **Interactive components**
+- **Mobile-friendly interface**
 
-## 📁 Projectstructuur
+## 📁 Project Structure
 
 ```
 Pharmalink-website/
 ├── src/
 │   ├── components/
-│   │   ├── Navbar.jsx          # Navigatiebalk
-│   │   ├── Hero.jsx            # Hoofdsectie met bedrijfsnaam en CTA
-│   │   ├── Services.jsx        # Diensten sectie
-│   │   ├── WhyUs.jsx           # USP sectie
-│   │   ├── Cases.jsx           # Portfolio/Cases sectie
-│   │   ├── Contact.jsx         # Contactformulier
-│   │   └── Footer.jsx          # Footer met bedrijfsinformatie
-│   ├── App.jsx                 # Hoofdcomponent
+│   │   ├── Navbar.jsx          # Navigation bar
+│   │   ├── Hero.jsx            # Main section with company name and CTA
+│   │   ├── Services.jsx        # Services section
+│   │   ├── WhyUs.jsx           # USP section
+│   │   ├── Cases.jsx           # Portfolio/Cases section
+│   │   ├── Contact.jsx         # Contact form
+│   │   └── Footer.jsx          # Footer with company information
+│   ├── App.jsx                 # Main component
 │   ├── main.jsx                # Entry point
 │   └── index.css               # TailwindCSS imports
 ├── index.html                  # HTML template
-├── tailwind.config.js          # TailwindCSS configuratie
-├── postcss.config.js           # PostCSS configuratie
-├── vite.config.js              # Vite configuratie
+├── tailwind.config.js          # TailwindCSS configuration
+├── postcss.config.js           # PostCSS configuration
+├── vite.config.js              # Vite configuration
 └── package.json                # Dependencies
 ```
 
-## 🛠️ Installatie
+## 🛠️ Installation
 
-1. **Clone de repository**
+1. **Clone the repository**
    ```bash
    git clone [repository-url]
    cd Pharmalink-website
    ```
 
-2. **Installeer dependencies**
+2. **Install dependencies**
    ```bash
    npm install
    ```
@@ -53,71 +53,71 @@ Pharmalink-website/
    ```
 
 4. **Open in browser**
-   Navigeer naar `http://localhost:5173`
+   Navigate to `http://localhost:5173`
 
-## 📱 Secties
+## 📱 Sections
 
 ### 1. **Hero Section**
-- Bedrijfsnaam: "PHARMALINK EUROPE"
-- Tagline over CDMO SEO Linkbuilding Services
+- Company name: "PHARMALINK EUROPE"
+- Tagline about CDMO SEO Linkbuilding Services
 - Call-to-action buttons
 - Trust indicators
 
-### 2. **Diensten**
-- SEO Optimalisatie
-- Linkbuilding
+### 2. **Services**
+- SEO Optimization
+- Link Building
 - Content Marketing
 - CDMO Support
 
-### 3. **Waarom Kiezen voor Ons**
-- 4 USP cards met iconen
-- Statistieken sectie
-- Bewezen resultaten
+### 3. **Why Choose Us**
+- 4 USP cards with icons
+- Statistics section
+- Proven results
 
 ### 4. **Cases & Portfolio**
-- 4 voorbeeld cases
-- Testimonials van klanten
-- Resultaten en tags
+- 4 example cases
+- Client testimonials
+- Results and tags
 
 ### 5. **Contact**
-- Contactformulier (naam, email, bericht)
-- Bedrijfsinformatie
-- Gratis SEO audit CTA
+- Contact form (name, email, company, message)
+- Company information
+- Free SEO audit CTA
 
 ### 6. **Footer**
-- Bedrijfsinformatie
+- Company information
 - Social media links
 - Newsletter signup
 - Trust badges
 
 ## 🎨 Styling
 
-- **TailwindCSS** voor alle styling
-- **Custom CSS classes** voor herbruikbare componenten
-- **Responsive design** voor alle schermformaten
-- **Smooth transitions** en hover effecten
-- **Consistente kleurenschema** met teal en zwart (officiële huisstijl)
+- **TailwindCSS** for all styling
+- **Custom CSS classes** for reusable components
+- **Responsive design** for all screen sizes
+- **Smooth transitions** and hover effects
+- **Consistent color scheme** with teal and black (official brand colors)
 
-## 🔧 Technische Details
+## 🔧 Technical Details
 
-- **React 18** met functional components en hooks
-- **Vite** voor snelle development en build
-- **TailwindCSS 3** voor utility-first styling
-- **PostCSS** voor CSS processing
-- **ESLint** voor code kwaliteit
+- **React 18** with functional components and hooks
+- **Vite** for fast development and build
+- **TailwindCSS 3** for utility-first styling
+- **PostCSS** for CSS processing
+- **ESLint** for code quality
 
 ## 📱 Responsive Features
 
 - **Mobile-first approach**
-- **Hamburger menu** voor mobiele navigatie
-- **Grid layouts** die zich aanpassen aan schermgrootte
-- **Flexible typography** en spacing
-- **Touch-friendly** buttons en formulier elementen
+- **Hamburger menu** for mobile navigation
+- **Grid layouts** that adapt to screen size
+- **Flexible typography** and spacing
+- **Touch-friendly** buttons and form elements
 
 ## 🚀 Build & Deploy
 
 ```bash
-# Build voor productie
+# Build for production
 npm run build
 
 # Preview build
@@ -127,32 +127,32 @@ npm run preview
 npm run lint
 ```
 
-## 📝 Customisatie
+## 📝 Customization
 
-### Teksten Aanpassen
-Alle teksten zijn opgeslagen in de componenten en kunnen eenvoudig worden aangepast. Zoek naar de gewenste tekst en vervang deze.
+### Updating Text Content
+All text content is stored in the components and can be easily modified. Search for the desired text and replace it.
 
-### Kleuren Wijzigen
-Kleuren kunnen worden aangepast in `tailwind.config.js` onder de `colors` sectie. De website gebruikt nu het officiële PHARMALINK EUROPE kleurenschema.
+### Changing Colors
+Colors can be modified in `tailwind.config.js` under the `colors` section. The website now uses the official PHARMALINK EUROPE color scheme.
 
-### Afbeeldingen Toevoegen
-Vervang de placeholder afbeeldingen in de Cases component met echte project afbeeldingen.
+### Adding Images
+Replace the placeholder images in the Cases component with real project images.
 
-### Links Bijwerken
-Update alle `href="#"` links naar echte URLs wanneer deze beschikbaar zijn.
+### Updating Links
+Update all `href="#"` links to real URLs when they become available.
 
 ## 🌟 Features
 
-- **Smooth scrolling** tussen secties
-- **Form validation** in contactformulier
-- **Interactive elements** met hover effecten
-- **Professional design** geschikt voor B2B
-- **SEO-friendly** structuur
+- **Smooth scrolling** between sections
+- **Form validation** in contact form
+- **Interactive elements** with hover effects
+- **Professional design** suitable for B2B
+- **SEO-friendly** structure
 - **Accessibility** best practices
 
 ## 📞 Support
 
-Voor vragen of ondersteuning, neem contact op via het contactformulier op de website.
+For questions or support, contact us through the contact form on the website.
 
 ---
 

@@ -14,38 +14,38 @@ const Hero = () => {
               EUROPE
             </h2>
           </div>
-          
+
           <p className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
-            Expert in CDMO SEO Linkbuilding Services. Wij helpen farmaceutische bedrijven om online zichtbaarheid te vergroten en organisch verkeer te genereren.
+            Expert in CDMO SEO Linkbuilding Services. We help pharmaceutical companies increase online visibility and generate organic traffic.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="btn-primary text-lg px-8 py-4">
-              Start Gratis Consultatie
+              Start Free Consultation
             </button>
             <button className="btn-secondary text-lg px-8 py-4">
-              Bekijk Onze Cases
+              View Our Cases
             </button>
           </div>
-          
+
           {/* Trust indicators */}
           <div className="mt-12 flex flex-wrap justify-center items-center gap-8 text-gray-600">
             <div className="flex items-center gap-2">
               <svg className="w-5 h-5 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
               </svg>
-              <span>100+ Tevreden Klanten</span>
+              <span>100+ Satisfied Clients</span>
             </div>
             <div className="flex items-center gap-2">
               <svg className="w-5 h-5 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
               </svg>
-              <span>5+ Jaar Ervaring</span>
+              <span>5+ Years Experience</span>
             </div>
             <div className="flex items-center gap-2">
               <svg className="w-5 h-5 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
               </svg>
-              <span>Gecertificeerde Experts</span>
+              <span>Certified Experts</span>
             </div>
           </div>
         </div>

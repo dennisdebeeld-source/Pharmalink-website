@@ -5,7 +5,7 @@ const Navbar = () => {
 
   const navItems = [
     { name: 'Home', href: '#home' },
-    { name: 'Diensten', href: '#services' },
+    { name: 'Services', href: '#services' },
     { name: 'Cases', href: '#cases' },
     { name: 'Contact', href: '#contact' },
   ]
@@ -46,7 +46,7 @@ const Navbar = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <button className="btn-primary">
-              Gratis Consultatie
+              Free Consultation
             </button>
           </div>
 
@@ -81,7 +81,7 @@ const Navbar = () => {
                 </button>
               ))}
               <button className="btn-primary w-full">
-                Gratis Consultatie
+                Free Consultation
               </button>
             </div>
           </div>

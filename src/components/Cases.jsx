@@ -3,36 +3,53 @@ import React from 'react'
 const Cases = () => {
   const cases = [
     {
-      title: 'PharmaCorp Nederland',
-      industry: 'Farmaceutische Productie',
-      results: '300% toename in organisch verkeer',
-      description: 'Complete SEO en linkbuilding campagne voor een toonaangevende farmaceutische producent in Nederland.',
-      image: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=400&h=300&fit=crop',
-      tags: ['SEO', 'Linkbuilding', 'Content Marketing']
+      title: 'PharmaCorp - API Manufacturing',
+      description: 'Increased organic traffic by 300% in 6 months through targeted SEO and content marketing strategies.',
+      image: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=400&h=300&fit=crop&crop=center',
+      tags: ['SEO', 'Content Marketing', 'B2B'],
+      results: ['300% Traffic Increase', '45 New Keywords', '25% Conversion Rate']
     },
     {
-      title: 'MediTech Solutions',
-      industry: 'Medische Apparatuur',
-      results: '250% groei in leads',
-      description: 'Strategische content marketing en linkbuilding voor een innovatieve medische technologie leverancier.',
-      image: 'https://images.unsplash.com/photo-1576091160399-112c8b0a0a1a?w=400&h=300&fit=crop',
-      tags: ['Content Marketing', 'SEO', 'Lead Generation']
+      title: 'BioPharma Solutions - Drug Development',
+      description: 'Established thought leadership through comprehensive content strategy and industry partnerships.',
+      image: 'https://images.unsplash.com/photo-1576086213369-97a306d36557?w=400&h=300&fit=crop&crop=center',
+      tags: ['Thought Leadership', 'Link Building', 'Industry SEO'],
+      results: ['200+ Quality Backlinks', '15% Domain Authority', '40% Lead Generation']
     },
     {
-      title: 'BioPharma CDMO',
-      industry: 'Contract Manufacturing',
-      results: '400% toename in website autoriteit',
-      description: 'Gespecialiseerde CDMO ondersteuning met focus op regulatory compliance en market access.',
-      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop',
-      tags: ['CDMO Support', 'Regulatory', 'Market Access']
+      title: 'MediTech Labs - Clinical Trials',
+      description: 'Optimized website for clinical trial recruitment with targeted local SEO and content optimization.',
+      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop&crop=center',
+      tags: ['Local SEO', 'Clinical Trials', 'Recruitment'],
+      results: ['150% Local Visibility', '60% Trial Applications', '8 New Locations']
     },
     {
-      title: 'VaccineTech Europe',
-      industry: 'Vaccin Ontwikkeling',
-      results: '180% groei in organisch verkeer',
-      description: 'Comprehensive digitale marketing strategie voor een innovatieve vaccin ontwikkelaar.',
-      image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&h=300&fit=crop',
-      tags: ['SEO', 'Content Marketing', 'Industry Expertise']
+      title: 'CDMO Partners - Manufacturing Services',
+      description: 'Enhanced online presence for contract manufacturing services with industry-specific optimization.',
+      image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=300&fit=crop&crop=center',
+      tags: ['CDMO SEO', 'Service Pages', 'Industry Keywords'],
+      results: ['180% Service Inquiries', '35 New Keywords', '25% Cost Reduction']
+    }
+  ]
+
+  const testimonials = [
+    {
+      text: "PHARMALINK EUROPE has dramatically improved our online visibility. Within 6 months, we saw a 300% increase in organic traffic and significantly more qualified leads.",
+      author: "Dr. Sarah van der Berg",
+      company: "PharmaCorp",
+      role: "Marketing Director"
+    },
+    {
+      text: "Excellent results and professional service. PHARMALINK EUROPE helped us strengthen our market position and establish thought leadership in the industry.",
+      author: "Lisa Chen",
+      company: "BioPharma Solutions",
+      role: "CEO"
+    },
+    {
+      text: "The team's expertise in pharmaceutical digital marketing is unmatched. They delivered results that exceeded our expectations and helped us reach new markets.",
+      author: "Dr. Michael Rodriguez",
+      company: "MediTech Labs",
+      role: "Clinical Director"
     }
   ]
 
@@ -41,128 +58,97 @@ const Cases = () => {
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Onze Cases & Resultaten
+            Success Stories & Case Studies
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Bekijk hoe wij farmaceutische bedrijven hebben geholpen om hun online aanwezigheid te versterken en groei te realiseren.
+            Discover how we've helped pharmaceutical companies and CDMOs achieve remarkable results through strategic digital marketing.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          {cases.map((caseItem, index) => (
+        {/* Case Studies Grid */}
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
+          {cases.map((caseStudy, index) => (
             <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100">
-              <div className="relative">
+              <div className="relative h-48 overflow-hidden">
                 <img 
-                  src={caseItem.image} 
-                  alt={caseItem.title}
-                  className="w-full h-48 object-cover"
+                  src={caseStudy.image} 
+                  alt={caseStudy.title}
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
-                <div className="absolute top-4 left-4">
-                  <span className="bg-primary-600 text-white px-3 py-1 rounded-full text-sm font-medium">
-                    {caseItem.industry}
-                  </span>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 right-4">
+                  <h3 className="text-xl font-semibold text-white mb-2">
+                    {caseStudy.title}
+                  </h3>
+                  <div className="flex flex-wrap gap-2">
+                    {caseStudy.tags.map((tag, tagIndex) => (
+                      <span key={tagIndex} className="px-2 py-1 bg-primary-600 text-white text-xs rounded-full">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
               
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  {caseItem.title}
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  {caseItem.description}
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  {caseStudy.description}
                 </p>
                 
-                <div className="mb-4">
-                  <div className="text-lg font-semibold text-primary-600 mb-2">
-                    Resultaat:
-                  </div>
-                  <p className="text-gray-700 font-medium">
-                    {caseItem.results}
-                  </p>
-                </div>
-
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {caseItem.tags.map((tag, tagIndex) => (
-                    <span 
-                      key={tagIndex}
-                      className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm"
-                    >
-                      {tag}
-                    </span>
+                <div className="space-y-2">
+                  {caseStudy.results.map((result, resultIndex) => (
+                    <div key={resultIndex} className="flex items-center text-sm text-gray-700">
+                      <svg className="w-4 h-4 text-primary-600 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      {result}
+                    </div>
                   ))}
                 </div>
-
-                <button className="btn-secondary w-full">
-                  Bekijk Volledige Case
-                </button>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <button className="btn-primary text-lg px-8 py-4">
-            Bekijk Alle Cases
-          </button>
-        </div>
-
         {/* Testimonials */}
-        <div className="mt-16 bg-gray-50 rounded-xl p-8">
+        <div className="bg-gray-50 rounded-2xl p-8">
           <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Wat Onze Klanten Zeggen
+            <h3 className="text-2xl font-bold text-gray-900 mb-2">
+              What Our Clients Say
             </h3>
+            <p className="text-gray-600">
+              Real feedback from pharmaceutical industry leaders
+            </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow">
-              <div className="flex items-center mb-4">
-                <div className="text-yellow-400 flex">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+          <div className="grid md:grid-cols-3 gap-6">
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-3">
+                    <svg className="w-6 h-6 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clipRule="evenodd" />
                     </svg>
-                  ))}
+                  </div>
+                  <div>
+                    <div className="font-semibold text-gray-900">{testimonial.author}</div>
+                    <div className="text-sm text-gray-600">{testimonial.company}</div>
+                  </div>
                 </div>
+                <p className="text-gray-600 mb-4 italic">
+                  "{testimonial.text}"
+                </p>
+                <div className="text-sm text-gray-500">{testimonial.role}</div>
               </div>
-              <p className="text-gray-600 mb-4">
-                "PHARMALINK EUROPE heeft onze online zichtbaarheid drastisch verbeterd. Binnen 6 maanden zagen we een toename van 300% in organisch verkeer."
-              </p>
-              <div className="font-semibold text-gray-900">- Dr. Sarah van der Berg, PharmaCorp</div>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow">
-              <div className="flex items-center mb-4">
-                <div className="text-yellow-400 flex">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                </div>
-              </div>
-              <p className="text-gray-600 mb-4">
-                "De expertise in de farmaceutische sector is ongeëvenaard. Ze begrijpen onze uitdagingen en bieden oplossingen op maat."
-              </p>
-              <div className="font-semibold text-gray-900">- Mark Johnson, MediTech</div>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow">
-              <div className="flex items-center mb-4">
-                <div className="text-yellow-400 flex">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                </div>
-              </div>
-              <p className="text-gray-600 mb-4">
-                "Uitstekende resultaten en professionele service. PHARMALINK EUROPE heeft ons geholpen om onze marktpositie te versterken."
-              </p>
-              <div className="font-semibold text-gray-900">- Lisa Chen, BioPharma</div>
-            </div>
+            ))}
           </div>
+        </div>
+
+        {/* CTA Section */}
+        <div className="text-center mt-12">
+          <button className="btn-primary text-lg px-8 py-4">
+            View All Case Studies
+          </button>
         </div>
       </div>
     </section>
