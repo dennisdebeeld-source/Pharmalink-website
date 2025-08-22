@@ -7,6 +7,7 @@ const Navbar = () => {
     { name: 'Home', href: '#home' },
     { name: 'Services', href: '#services' },
     { name: 'Cases', href: '#cases' },
+    { name: 'FAQ', href: '#faq' },
     { name: 'Contact', href: '#contact' },
   ]
 
@@ -24,9 +25,26 @@ const Navbar = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="text-left">
-              <h1 className="text-xl font-bold text-black">PHARMALINK</h1>
-              <span className="text-sm font-medium text-primary-600">EUROPE</span>
+            <div className="flex items-center space-x-3">
+              {/* Dot Pattern Logo */}
+              <div className="relative">
+                <div className="grid grid-cols-2 gap-0.5 w-10 h-10">
+                  <div className="w-4 h-4 bg-primary-600 rounded-full"></div>
+                  <div className="w-4 h-4 bg-primary-600 rounded-full"></div>
+                  <div className="w-4 h-4 bg-primary-600 rounded-full"></div>
+                  <div className="w-4 h-4 bg-primary-600 rounded-full"></div>
+                </div>
+                {/* Smaller surrounding dots */}
+                <div className="absolute -top-0.5 -left-0.5 w-2.5 h-2.5 bg-primary-500 rounded-full"></div>
+                <div className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 bg-primary-500 rounded-full"></div>
+                <div className="absolute -bottom-0.5 -left-0.5 w-2.5 h-2.5 bg-primary-500 rounded-full"></div>
+                <div className="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 bg-primary-500 rounded-full"></div>
+              </div>
+              
+              <div className="text-left">
+                <h1 className="text-xl font-bold text-black">PHARMALINK</h1>
+                <span className="text-sm font-medium text-primary-600">EUROPE</span>
+              </div>
             </div>
           </div>
 

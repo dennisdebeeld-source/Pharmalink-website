@@ -19,14 +19,14 @@ const Footer = () => {
     resources: [
       { name: 'Blog', href: '#' },
       { name: 'Case Studies', href: '#cases' },
-      { name: 'White Papers', href: '#' },
+      { name: 'FAQ', href: '#faq' },
       { name: 'Industry Reports', href: '#' }
     ],
     support: [
       { name: 'Contact Us', href: '#contact' },
       { name: 'Help Center', href: '#' },
       { name: 'Support Portal', href: '#' },
-      { name: 'FAQ', href: '#' }
+      { name: 'Free Consultation', href: '#contact' }
     ]
   }
 
@@ -75,9 +75,26 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="mb-6">
-              <div className="text-left">
-                <h3 className="text-2xl font-bold text-white mb-1">PHARMALINK</h3>
-                <span className="text-lg font-medium text-primary-400">EUROPE</span>
+              <div className="flex items-center space-x-3">
+                {/* Dot Pattern Logo */}
+                <div className="relative">
+                  <div className="grid grid-cols-2 gap-0.5 w-12 h-12">
+                    <div className="w-5 h-5 bg-primary-600 rounded-full"></div>
+                    <div className="w-5 h-5 bg-primary-600 rounded-full"></div>
+                    <div className="w-5 h-5 bg-primary-600 rounded-full"></div>
+                    <div className="w-5 h-5 bg-primary-600 rounded-full"></div>
+                  </div>
+                  {/* Smaller surrounding dots */}
+                  <div className="absolute -top-0.5 -left-0.5 w-3 h-3 bg-primary-500 rounded-full"></div>
+                  <div className="absolute -top-0.5 -right-0.5 w-3 h-3 bg-primary-500 rounded-full"></div>
+                  <div className="absolute -bottom-0.5 -left-0.5 w-3 h-3 bg-primary-500 rounded-full"></div>
+                  <div className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-primary-500 rounded-full"></div>
+                </div>
+                
+                <div className="text-left">
+                  <h3 className="text-2xl font-bold text-white mb-1">PHARMALINK</h3>
+                  <span className="text-lg font-medium text-primary-400">EUROPE</span>
+                </div>
               </div>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
